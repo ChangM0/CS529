@@ -57,4 +57,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="shader.fs">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="shader.vs">
+      <Filter>Header Files</Filter>
+    </None>
+  </ItemGroup>
 </Project>

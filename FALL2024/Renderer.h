@@ -12,7 +12,7 @@ public:
 
 	void clear(float r, float g, float b, float a);
 	void swapBuffers();
-	void drawTriangle(const Vector3& v1, const Vector3& v2, const Vector3& v3);
+	void drawTriangle(const Vector3& v1, const Vector3& v2, const Vector3& v3, const Matrix4 modelMatrix);
 
 private:
 	void initialize();
@@ -26,4 +26,7 @@ private:
 	GLuint VBO;
 	Matrix4 projectionMatrix;
 	Matrix4 modelMatrix;
+	GLuint modelLoc;
+	GLuint viewLoc;
+	GLuint projectionLoc;
 };
